@@ -1,4 +1,7 @@
 {
+    "extensions": [
+        "gh-gh-dogfooding.codespaces-zero"
+    ],
     "codespaces": {
       "liftoff": {
         "defaultFile": "config/routes.rb",
