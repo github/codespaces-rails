@@ -1,0 +1,20 @@
+current directory: /workspaces/codespaces-try-rails/vendor/bundle/ruby/3.0.0/gems/io-console-0.5.11/ext/io/console
+/opt/ruby/3.0.3/bin/ruby -I /opt/ruby/3.0.3/lib/ruby/site_ruby/3.0.0 -r ./siteconf20220608-13374-ys2l00.rb extconf.rb
+checking for termios.h... yes
+checking for cfmakeraw() in termios.h... yes
+checking for sys/ioctl.h... yes
+checking for HAVE_RUBY_FIBER_SCHEDULER_H... no
+checking for rb_scheduler_timeout()... no
+creating Makefile
+
+current directory: /workspaces/codespaces-try-rails/vendor/bundle/ruby/3.0.0/gems/io-console-0.5.11/ext/io/console
+make DESTDIR\= clean
+
+current directory: /workspaces/codespaces-try-rails/vendor/bundle/ruby/3.0.0/gems/io-console-0.5.11/ext/io/console
+make DESTDIR\=
+compiling console.c
+linking shared-object io/console.so
+
+current directory: /workspaces/codespaces-try-rails/vendor/bundle/ruby/3.0.0/gems/io-console-0.5.11/ext/io/console
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 console.so ./.gem.20220608-13374-gjllpu/io

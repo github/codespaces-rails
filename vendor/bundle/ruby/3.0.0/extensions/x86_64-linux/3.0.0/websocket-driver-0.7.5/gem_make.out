@@ -1,0 +1,15 @@
+current directory: /workspaces/codespaces-try-rails/vendor/bundle/ruby/3.0.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+/opt/ruby/3.0.3/bin/ruby -I /opt/ruby/3.0.3/lib/ruby/site_ruby/3.0.0 -r ./siteconf20220608-13374-6fc8hl.rb extconf.rb
+creating Makefile
+
+current directory: /workspaces/codespaces-try-rails/vendor/bundle/ruby/3.0.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make DESTDIR\= clean
+
+current directory: /workspaces/codespaces-try-rails/vendor/bundle/ruby/3.0.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make DESTDIR\=
+compiling websocket_mask.c
+linking shared-object websocket_mask.so
+
+current directory: /workspaces/codespaces-try-rails/vendor/bundle/ruby/3.0.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 websocket_mask.so ./.gem.20220608-13374-xkdayb

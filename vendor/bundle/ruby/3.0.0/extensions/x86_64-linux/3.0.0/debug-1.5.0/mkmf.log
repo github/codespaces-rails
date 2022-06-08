@@ -1,0 +1,89 @@
+have_func: checking for rb_iseq_parameters(NULL, 0) in VALUE rb_iseq_parameters(void *, int is_proc);... -------------------- yes
+
+"gcc -o conftest -I/opt/ruby/3.0.3/include/ruby-3.0.0/x86_64-linux -I/opt/ruby/3.0.3/include/ruby-3.0.0/ruby/backward -I/opt/ruby/3.0.3/include/ruby-3.0.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC conftest.c  -L. -L/opt/ruby/3.0.3/lib -Wl,-rpath,/opt/ruby/3.0.3/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/opt/ruby/3.0.3/lib -L/opt/ruby/3.0.3/lib -lruby  -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+"gcc -o conftest -I/opt/ruby/3.0.3/include/ruby-3.0.0/x86_64-linux -I/opt/ruby/3.0.3/include/ruby-3.0.0/ruby/backward -I/opt/ruby/3.0.3/include/ruby-3.0.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC conftest.c  -L. -L/opt/ruby/3.0.3/lib -Wl,-rpath,/opt/ruby/3.0.3/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/opt/ruby/3.0.3/lib -L/opt/ruby/3.0.3/lib -lruby  -lm   -lc"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: VALUE rb_iseq_parameters(void *, int is_proc);
+ 4: /*top*/
+ 5: extern int t(void);
+ 6: int main(int argc, char **argv)
+ 7: {
+ 8:   if (argc > 1000000) {
+ 9:     int (* volatile tp)(void)=(int (*)(void))&t;
+10:     printf("%d", (*tp)());
+11:   }
+12: 
+13:   return !!argv[argc];
+14: }
+15: 
+16: int t(void) { rb_iseq_parameters(NULL, 0); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_iseq_code_location(NULL, NULL, NULL, NULL, NULL) in void rb_iseq_code_location(void *, int *first_lineno, int *first_column, int *last_lineno, int *last_column);... -------------------- yes
+
+"gcc -o conftest -I/opt/ruby/3.0.3/include/ruby-3.0.0/x86_64-linux -I/opt/ruby/3.0.3/include/ruby-3.0.0/ruby/backward -I/opt/ruby/3.0.3/include/ruby-3.0.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC conftest.c  -L. -L/opt/ruby/3.0.3/lib -Wl,-rpath,/opt/ruby/3.0.3/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/opt/ruby/3.0.3/lib -L/opt/ruby/3.0.3/lib -lruby  -lm   -lc"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: void rb_iseq_code_location(void *, int *first_lineno, int *first_column, int *last_lineno, int *last_column);
+ 4: /*top*/
+ 5: extern int t(void);
+ 6: int main(int argc, char **argv)
+ 7: {
+ 8:   if (argc > 1000000) {
+ 9:     int (* volatile tp)(void)=(int (*)(void))&t;
+10:     printf("%d", (*tp)());
+11:   }
+12: 
+13:   return !!argv[argc];
+14: }
+15: 
+16: int t(void) { rb_iseq_code_location(NULL, NULL, NULL, NULL, NULL); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_iseq_type(NULL) in VALUE rb_iseq_type(void *);... -------------------- no
+
+"gcc -o conftest -I/opt/ruby/3.0.3/include/ruby-3.0.0/x86_64-linux -I/opt/ruby/3.0.3/include/ruby-3.0.0/ruby/backward -I/opt/ruby/3.0.3/include/ruby-3.0.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC conftest.c  -L. -L/opt/ruby/3.0.3/lib -Wl,-rpath,/opt/ruby/3.0.3/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/opt/ruby/3.0.3/lib -L/opt/ruby/3.0.3/lib -lruby  -lm   -lc"
+/usr/bin/ld: /tmp/ccQviTXK.o: in function `t':
+/workspaces/codespaces-try-rails/vendor/bundle/ruby/3.0.0/gems/debug-1.5.0/ext/debug/conftest.c:16: undefined reference to `rb_iseq_type'
+collect2: error: ld returned 1 exit status
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: VALUE rb_iseq_type(void *);
+ 4: /*top*/
+ 5: extern int t(void);
+ 6: int main(int argc, char **argv)
+ 7: {
+ 8:   if (argc > 1000000) {
+ 9:     int (* volatile tp)(void)=(int (*)(void))&t;
+10:     printf("%d", (*tp)());
+11:   }
+12: 
+13:   return !!argv[argc];
+14: }
+15: 
+16: int t(void) { rb_iseq_type(NULL); return 0; }
+/* end */
+
+--------------------
+
