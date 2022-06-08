@@ -2,6 +2,7 @@
     "extensions": [
         "gh-gh-dogfooding.codespaces-zero"
     ],
+    "postCreateCommand": "bundle install --local",
     "codespaces": {
       "zero": {
         "defaultFile": "config/routes.rb",
