@@ -3,7 +3,7 @@
         "gh-gh-dogfooding.codespaces-zero"
     ],
     "codespaces": {
-      "liftoff": {
+      "zero": {
         "defaultFile": "config/routes.rb",
         "startCommand": "bin/rails s",
         "previewPort": 3000,
