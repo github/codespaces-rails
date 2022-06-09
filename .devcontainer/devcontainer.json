@@ -1,6 +1,7 @@
 {
     "extensions": [
-        "gh-gh-dogfooding.codespaces-zero"
+        "gh-gh-dogfooding.codespaces-zero",
+        "rebornix.Ruby"
     ],
     "postCreateCommand": "bundle install --local",
     "codespaces": {
