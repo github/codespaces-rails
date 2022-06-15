@@ -4,6 +4,7 @@
         "rebornix.Ruby"
     ],
     "onCreateCommand": "bundle install --local",
+    "postCreateCommand": "",
     "hostRequirements": {
         "cpus": 8,
         "memory": "16gb",
