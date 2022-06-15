@@ -3,7 +3,7 @@
         "gh-gh-dogfooding.codespaces-zero",
         "rebornix.Ruby"
     ],
-    "postCreateCommand": "bundle install --local",
+    "onCreateCommand": "bundle install --local",
     "codespaces": {
       "zero": {
         "defaultFile": "config/routes.rb",
