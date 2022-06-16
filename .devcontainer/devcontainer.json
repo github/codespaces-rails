@@ -15,7 +15,7 @@
         "defaultFile": "config/routes.rb",
         "startCommand": "bin/rails s",
         "previewPort": 3000,
-        "previewDelay:": 6000
+        "previewDelay": 6000
       }
     }
   }
