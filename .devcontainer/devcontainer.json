@@ -6,8 +6,8 @@
     "onCreateCommand": "bundle install --local",
     "postCreateCommand": "",
     "hostRequirements": {
-        "cpus": 8,
-        "memory": "16gb",
+        "cpus": 4,
+        "memory": "8gb",
         "storage": "32gb"
     },
     "codespaces": {
