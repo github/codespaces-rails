@@ -3,18 +3,5 @@
         "rebornix.Ruby"
     ],
     "onCreateCommand": "bundle install --local",
-    "postCreateCommand": "",
-    "hostRequirements": {
-        "cpus": 4,
-        "memory": "8gb",
-        "storage": "32gb"
-    },
-    "codespaces": {
-      "zero": {
-        "defaultFile": "config/routes.rb",
-        "startCommand": "bin/rails s",
-        "previewPort": 3000,
-        "previewDelay": 6000
-      }
-    }
+    "postCreateCommand": ""
   }
