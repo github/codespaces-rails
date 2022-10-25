@@ -1,4 +1,18 @@
 {
+    "postAttachCommand": {
+        "server": "rails server",
+    },
+    "portsAttributes": {
+        "3000": {
+            "label": "Application",
+            "onAutoForward": "openPreview"
+        }
+    },
+    "customizations": {
+        "codespaces": {
+            "openFiles": ["config/routes.rb", "README.md"]
+        }
+    },
     "extensions": [
         "rebornix.Ruby"
     ],
