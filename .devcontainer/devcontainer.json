@@ -11,11 +11,13 @@
     "customizations": {
         "codespaces": {
             "openFiles": ["config/routes.rb", "README.md"]
+        },
+        "vscode": {
+            "extensions": [
+                "rebornix.Ruby"
+            ],
         }
     },
-    "extensions": [
-        "rebornix.Ruby"
-    ],
     "onCreateCommand": "bundle install --local",
     "postCreateCommand": ""
   }
