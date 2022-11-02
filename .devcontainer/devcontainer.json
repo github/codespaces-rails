@@ -19,5 +19,6 @@
         }
     },
     "onCreateCommand": "bundle install --local",
-    "postCreateCommand": ""
+    "postCreateCommand": "",
+    "hostRequirements": {"cpus": 4}
   }
