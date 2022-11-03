@@ -59,8 +59,9 @@ Rails.application.configure do
   # Suppress logger output for asset requests.
   config.assets.quiet = true
 
+  pf_domain = ENV['GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN']
   config.action_dispatch.default_headers = {
-    'X-Frame-Options' => 'ALLOW-FROM preview.app.github.dev'
+    'X-Frame-Options' => "ALLOW-FROM #{pf_domain}"
   }
 
   # Raises error for missing translations.
@@ -73,5 +74,8 @@ Rails.application.configure do
   # config.action_cable.disable_request_forgery_protection = true
 
   # Allow requests from our preview domain.
-  config.hosts << "#{ENV['CODESPACE_NAME']}-3000.preview.app.github.dev"
+  pf_host = "#{ENV['CODESPACE_NAME']}-3000.#{pf_domain}"
+  config.hosts << pf_host
+
+  config.action_cable.allowed_request_origins = ["https://#{pf_host}"]
 end
