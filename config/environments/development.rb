@@ -70,8 +70,10 @@ Rails.application.configure do
   # config.action_view.annotate_rendered_view_with_filenames = true
 
   # Uncomment if you wish to allow Action Cable access from any origin.
-  # config.action_cable.disable_request_forgery_protection = true
+  config.action_cable.disable_request_forgery_protection = true
 
   # Allow requests from our preview domain.
   config.hosts << "#{ENV['CODESPACE_NAME']}-3000.preview.app.github.dev"
+
+  # config.action_cable.allowed_request_origins = ["#{ENV['CODESPACE_NAME']}-3000.preview.app.github.dev"]
 end
