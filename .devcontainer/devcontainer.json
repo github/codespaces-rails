@@ -10,7 +10,7 @@
     },
     "customizations": {
         "codespaces": {
-            "openFiles": ["config/routes.rb", "README.md"]
+            "openFiles": ["app/views/hello/index.html.erb", "README.md"]
         },
         "vscode": {
             "extensions": [
