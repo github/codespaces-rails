@@ -1,24 +1,29 @@
 {
-    "postAttachCommand": {
-        "server": "rails server",
+  "hostRequirements": {
+    "cpus": 4
+  },
+  "waitFor": "onCreateCommand",
+  "updateContentCommand": "bundle install --local",
+  "postCreateCommand": "",
+  "postAttachCommand": {
+    "server": "rails server"
+  },
+  "customizations": {
+    "codespaces": {
+      "openFiles": [
+        "app/views/hello/index.html.erb"
+      ]
     },
-    "portsAttributes": {
-        "3000": {
-            "label": "Application",
-            "onAutoForward": "openPreview"
-        }
-    },
-    "customizations": {
-        "codespaces": {
-            "openFiles": ["app/views/hello/index.html.erb"]
-        },
-        "vscode": {
-            "extensions": [
-                "rebornix.Ruby"
-            ],
-        }
-    },
-    "onCreateCommand": "bundle install --local",
-    "postCreateCommand": "",
-    "hostRequirements": {"cpus": 4}
+    "vscode": {
+      "extensions": [
+        "rebornix.Ruby"
+      ]
+    }
+  },
+  "portsAttributes": {
+    "3000": {
+      "label": "Application",
+      "onAutoForward": "openPreview"
+    }
   }
+}
