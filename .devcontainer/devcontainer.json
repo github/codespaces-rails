@@ -4,7 +4,7 @@
     "cpus": 4
   },
   "waitFor": "onCreateCommand",
-  "updateContentCommand": "bundle install",
+  "updateContentCommand": "bundle install --local",
   "postCreateCommand": "",
   "postAttachCommand": {
     "server": "rails server"
