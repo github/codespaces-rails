@@ -155,7 +155,7 @@ GEM
       timeout
     net-smtp (0.3.3)
       net-protocol
-    nio4r (2.5.8)
+    nio4r (2.5.9)
     nokogiri (1.14.3-x86_64-darwin)
       racc (~> 1.4)
     nokogiri (1.14.3-x86_64-linux)
@@ -164,7 +164,7 @@ GEM
     parser (3.2.0.0)
       ast (~> 2.4.1)
     public_suffix (5.0.1)
-    puma (5.6.5)
+    puma (5.6.7)
       nio4r (~> 2.0)
     racc (1.6.2)
     rack (2.2.6.4)
@@ -290,7 +290,7 @@ DEPENDENCIES
   hotwire-livereload (~> 1.2)
   importmap-rails
   jbuilder
-  puma (~> 5.0)
+  puma (~> 5.6)
   rails (~> 7.0.7)
   selenium-webdriver
   solargraph
