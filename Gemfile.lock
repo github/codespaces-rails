@@ -168,7 +168,7 @@ GEM
       timeout
     net-smtp (0.4.0)
       net-protocol
-    nio4r (2.5.9)
+    nio4r (2.7.0)
     nokogiri (1.14.3-x86_64-darwin)
       racc (~> 1.4)
     nokogiri (1.14.3-x86_64-linux)
@@ -177,7 +177,7 @@ GEM
     parser (3.2.0.0)
       ast (~> 2.4.1)
     public_suffix (5.0.1)
-    puma (6.4.0)
+    puma (6.4.2)
       nio4r (~> 2.0)
     racc (1.6.2)
     rack (3.0.8)
