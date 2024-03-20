@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  state: 1
+  run_result: 1
+  strategy: MyString
+
+two:
+  state: 1
+  run_result: 1
+  strategy: MyString

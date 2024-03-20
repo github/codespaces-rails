@@ -1,13 +1,17 @@
-require_relative "boot"
+# typed: false
+# frozen_string_literal: true
 
-require "rails/all"
+require_relative 'boot'
+
+require 'rails/all'
+require 'sorbet-runtime'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
 module CodespacesTryRails
-  class Application < Rails::Application
+  class Application < Rails::Application # rubocop:disable Style/Documentation
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.1
 
