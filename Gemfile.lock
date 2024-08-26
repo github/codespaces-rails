@@ -245,7 +245,7 @@ GEM
       io-console (~> 0.5)
     reverse_markdown (2.1.1)
       nokogiri
-    rexml (3.3.3)
+    rexml (3.3.6)
       strscan
     rubocop (1.60.1)
       json (~> 2.3)
