@@ -74,4 +74,4 @@ group :test do
   gem "webdrivers"
 end
 
-gem "rack-session", "= 2.1.1"
+gem "rack-session", "~> 2.1.1"
