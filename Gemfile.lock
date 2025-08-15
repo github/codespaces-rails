@@ -353,6 +353,7 @@ DEPENDENCIES
   sprockets-rails
   sqlite3 (~> 1.4)
   stimulus-rails
+  thor (>= 1.4.0)
   turbo-rails
   tzinfo-data
   webdrivers
